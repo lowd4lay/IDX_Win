@@ -2,14 +2,14 @@
 set -e
 
 ### CONFIG ###
-ISO_URL="https://go.microsoft.com/fwlink/p/?LinkID=2195443"
-ISO_FILE="win11-gamer.iso"
+ISO_URL="https://go.microsoft.com/fwlink/p/?LinkID=2195443&clcid=0x409&culture=en-us&country=US"
+ISO_FILE="win2012r2.iso"
 
-DISK_FILE="/var/win11.qcow2"
-DISK_SIZE="64G"
+DISK_FILE="/var/win2012.qcow2"
+DISK_SIZE="50G"
 
-RAM="8G"
-CORES="4"
+RAM="16G"
+CORES="8"
 
 VNC_DISPLAY=":0"
 RDP_PORT="3389"
@@ -18,7 +18,7 @@ FLAG_FILE="installed.flag"
 WORKDIR="$HOME/windows-idx"
 
 ### NGROK ###
-NGROK_TOKEN="38WO5iYPn4Hq5A5SUOjtGptsxfE_7jDB4PmSF78GKcAguUo1H"
+NGROK_TOKEN="39LFLzkmMV0Db85h5QKc3ELPvdb_6ytMpoZ64Wwca22uYowrS"
 NGROK_DIR="$HOME/.ngrok"
 NGROK_BIN="$NGROK_DIR/ngrok"
 NGROK_CFG="$NGROK_DIR/ngrok.yml"
@@ -45,8 +45,8 @@ fi
 ############################
 (
   while true; do
-    echo "Lộc Nguyễn đẹp troai" > locnguyen.txt
-    echo "[$(date '+%H:%M:%S')] Đã tạo locnguyen.txt"
+    echo "I don't know" > dont.txt
+    echo "[$(date '+%H:%M:%S')] Đã tạo dont.txt"
     sleep 300
   done
 ) &
